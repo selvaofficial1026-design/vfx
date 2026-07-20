@@ -83,7 +83,7 @@ export default function PortfolioSlider({ items, onPlay }: PortfolioSliderProps)
               }}
               transition={{ duration: 0.4, ease: "easeOut" }}
               className={cn(
-                "w-[240px] md:w-[280px] shrink-0 relative transition-all duration-300",
+                "w-[180px] sm:w-[220px] md:w-[280px] shrink-0 relative transition-all duration-300",
                 isCardHovered ? "z-30" : "z-10"
               )}
             >
@@ -109,7 +109,7 @@ export default function PortfolioSlider({ items, onPlay }: PortfolioSliderProps)
                     src={item.image}
                     alt={item.name}
                     fill
-                    sizes="(max-width: 768px) 240px, 280px"
+                    sizes="(max-width: 640px) 180px, (max-width: 768px) 220px, 280px"
                     className="object-cover transition-transform duration-[2000ms] ease-out pointer-events-none group-hover/card:scale-110"
                   />
                   
@@ -145,7 +145,7 @@ export default function PortfolioSlider({ items, onPlay }: PortfolioSliderProps)
                   
                   {/* Title inside poster */}
                   <div className="absolute bottom-4 left-4 right-4 z-10 transform translate-y-2 group-hover/card:translate-y-0 transition-transform duration-500">
-                    <h3 className="text-xl md:text-2xl font-serif text-white font-bold mb-1 drop-shadow-lg">
+                    <h3 className="text-lg md:text-2xl font-serif text-white font-bold mb-1 drop-shadow-lg leading-tight">
                       {item.name}
                     </h3>
                     <motion.div 
