@@ -16,7 +16,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Explosion Comp",
     description: "Complex multipass compositing of pyrotechnics seamlessly integrated into live-action plates.",
-    image: "/images/menu/cappuccino.png",
+    image: "/images/explosion.png",
     category: "Compositing",
     is4K: true,
     videoId: "dQw4w9WgXcQ" // Placeholder YouTube ID
@@ -24,7 +24,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Sci-Fi Matte Paint",
     description: "Seamless matte painting extensions for futuristic cityscape shots.",
-    image: "/images/menu/sandwich.png",
+    image: "/images/cyberpunk.png",
     category: "Compositing",
     is4K: true,
     videoId: "y9k-ndapeT0" // Another placeholder
@@ -32,7 +32,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Green Screen Extraction",
     description: "Flawless chroma keying and spill suppression with fine hair detail preservation.",
-    image: "/images/menu/macchiato.png",
+    image: "/images/node_graph.png",
     category: "Compositing",
     is4K: true,
     videoId: "ScMzIvxBSi4" 
@@ -42,7 +42,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Cyberpunk Cityscape",
     description: "Fully 3D modeled and composited futuristic cityscape with volumetric lighting.",
-    image: "/images/menu/cold_coffee.png",
+    image: "/images/cyberpunk.png",
     category: "3D Animation",
     is4K: true,
     videoId: "dQw4w9WgXcQ"
@@ -50,7 +50,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Product Visualization",
     description: "Photorealistic 3D rendering of luxury products with perfect lighting setups.",
-    image: "/images/menu/smoothie.png",
+    image: "/images/node_graph.png",
     category: "3D Animation",
     is4K: true,
     videoId: "y9k-ndapeT0"
@@ -60,7 +60,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Holographic UI",
     description: "Intricate 3D holographic user interfaces designed for feature film screens.",
-    image: "/images/menu/brownie.png",
+    image: "/images/node_graph.png",
     category: "Motion Graphics",
     is4K: true,
     videoId: "ScMzIvxBSi4"
@@ -68,7 +68,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Title Sequence",
     description: "Cinematic opening title sequences with dynamic typography and transitions.",
-    image: "/images/menu/cheesecake.png",
+    image: "/images/explosion.png",
     category: "Motion Graphics",
     is4K: true,
     videoId: "dQw4w9WgXcQ"
@@ -78,7 +78,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Creature Animation",
     description: "High-fidelity creature animation with muscle simulation and photorealistic fur rendering.",
-    image: "/images/menu/sandwich.png",
+    image: "/images/creature.png",
     category: "VFX",
     is4K: true,
     videoId: "y9k-ndapeT0"
@@ -86,7 +86,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Fluid Simulation",
     description: "Realistic water and fluid simulations for large scale environment destruction.",
-    image: "/images/menu/fries.png",
+    image: "/images/explosion.png",
     category: "VFX",
     is4K: true,
     videoId: "ScMzIvxBSi4"
@@ -94,7 +94,7 @@ const portfolioItems: PortfolioItem[] = [
   {
     name: "Particle Magic",
     description: "Complex particle systems driven by fluid dynamics for magical spell effects.",
-    image: "/images/menu/avocado.png",
+    image: "/images/creature.png",
     category: "VFX",
     is4K: true,
     videoId: "dQw4w9WgXcQ"

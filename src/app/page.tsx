@@ -17,7 +17,7 @@ const featuredItems = [
     name: "Cyberpunk Cityscape",
     description: "Fully 3D modeled and composited futuristic cityscape with volumetric lighting and dynamic crowds.",
     price: "Premium",
-    image: "/images/menu/cappuccino.png",
+    image: "/images/cyberpunk.png",
     category: "3D Animation",
     youtubeId: "vBmwGEGza2E"
   },
@@ -25,7 +25,7 @@ const featuredItems = [
     name: "Creature Animation",
     description: "High-fidelity creature animation with muscle simulation and photorealistic fur rendering.",
     price: "Custom",
-    image: "/images/menu/brownie.png",
+    image: "/images/creature.png",
     category: "VFX",
     youtubeId: "Wn9V7n6aB58"
   },
@@ -33,7 +33,7 @@ const featuredItems = [
     name: "Explosion Comp",
     description: "Complex multipass compositing of pyrotechnics seamlessly integrated into live-action plates.",
     price: "Standard",
-    image: "/images/menu/sandwich.png",
+    image: "/images/explosion.png",
     category: "Compositing",
     youtubeId: "K-t_sL8E8e8"
   }
@@ -70,7 +70,7 @@ export default function Home() {
       <Hero />
 
       {/* Featured Projects Section */}
-      <section className="py-32 px-6 md:px-12 bg-premium-gradient relative z-10">
+      <section className="py-20 md:py-32 px-6 md:px-12 bg-premium-gradient relative z-10">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             subtitle="Showcase"
@@ -81,9 +81,9 @@ export default function Home() {
               <MenuItemCard key={index} index={index} {...item} />
             ))}
           </div>
-          <div className="mt-20 text-center">
+          <div className="mt-16 md:mt-20 text-center">
             <Link href="/portfolio">
-              <button className="px-12 py-5 bg-coffee-dark text-white rounded-full font-bold text-xs uppercase tracking-[0.3em] hover:bg-cappuccino transition-all shadow-premium hover:shadow-premium-hover">
+              <button className="px-12 py-5 bg-coffee-dark text-white rounded-full font-bold text-xs uppercase tracking-[0.3em] hover:bg-cappuccino transition-all shadow-premium hover:shadow-premium-hover active:scale-95">
                 View Full Portfolio
               </button>
             </Link>
@@ -92,7 +92,7 @@ export default function Home() {
       </section>
 
       {/* Condensed About Section */}
-      <section id="about" className="py-24 px-6 md:px-12 bg-white overflow-hidden relative z-10">
+      <section id="about" className="py-20 md:py-24 px-6 md:px-12 bg-white overflow-hidden relative z-10">
         <div className="max-w-4xl mx-auto text-center">
            <span className="text-[10px] uppercase tracking-[0.5em] text-cappuccino font-bold mb-6 block">Our Legacy</span>
            <h2 className="text-4xl md:text-6xl font-serif text-coffee-dark italic leading-tight mb-8">
@@ -134,11 +134,11 @@ export default function Home() {
           className="absolute inset-0"
         >
           <Image
-            src="/images/coffee.png"
+            src="/images/node_graph.png"
             alt="Close-up of a complex 3D node graph"
             fill
             sizes="100vw"
-            className="object-cover scale-150 brightness-[0.3]"
+            className="object-cover opacity-90 brightness-[0.3]"
           />
         </motion.div>
         <div className="relative z-10 h-full flex items-center justify-center px-6">
@@ -149,8 +149,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-32 px-6 md:px-12 bg-background">
+      {/* Testimonials Section */}
+      <section className="py-20 md:py-32 px-6 md:px-12 bg-background relative z-10">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             subtitle="Voices of Excellence"
