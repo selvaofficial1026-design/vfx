@@ -47,6 +47,17 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, [isOpen]);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   return (
     <nav
       className={cn(
@@ -105,6 +116,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
+          aria-label={isOpen ? "Close mobile menu" : "Open mobile menu"}
           className={cn(
             "md:hidden p-2 transition-colors",
             scrolled ? "text-coffee-dark" : (pathname === "/" || pathname === "/contact" || pathname === "/about" ? "text-white" : "text-coffee-dark")

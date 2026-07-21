@@ -38,7 +38,7 @@ export default function CustomCursor() {
   }, [mouseX, mouseY]);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-[99999] hidden md:block">
+    <div className="fixed inset-0 pointer-events-none z-[99999] hidden [@media(hover:hover)]:block">
       <motion.div
         className="w-4 h-4 bg-cappuccino rounded-full flex items-center justify-center mix-blend-difference"
         style={{
