@@ -114,7 +114,7 @@ export default function ContactPage() {
                transition={{ duration: 0.8 }}
                className="flex flex-col justify-center"
             >
-              <div className="bg-[#0f0f0f]/95 backdrop-blur-xl p-8 md:p-10 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_rgba(200,149,95,0.2)] hover:-translate-y-2 transition-all duration-500 relative overflow-hidden border border-white/10 hover:border-cappuccino/30 h-fit group/form cursor-default">
+              <div className="bg-[#0f0f0f]/95 backdrop-blur-xl p-8 md:p-10 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_rgba(200,149,95,0.2)] active:shadow-[0_20px_50px_rgba(200,149,95,0.2)] hover:-translate-y-2 active:-translate-y-2 transition-all duration-500 relative overflow-hidden border border-white/10 hover:border-cappuccino/30 active:border-cappuccino/30 h-fit group/form cursor-default focus:outline-none" tabIndex={-1}>
                 
                 {/* Subtle Glow Effects */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-cappuccino/15 rounded-full -translate-y-1/2 translate-x-1/2 blur-[80px] pointer-events-none transition-opacity duration-700 opacity-50 group-focus-within/form:opacity-100" />

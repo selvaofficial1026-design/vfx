@@ -73,9 +73,9 @@ export default function PrivacyPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 + 0.3 }}
-                className="group bg-white p-10 rounded-[2rem] border border-cream shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.15)] hover:-translate-y-2 transition-all duration-500"
+                className="group bg-white p-10 rounded-[2rem] border border-cream shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.15)] active:shadow-[0_20px_50px_rgba(200,149,95,0.15)] hover:-translate-y-2 active:-translate-y-1 transition-all duration-500 cursor-pointer focus:outline-none" tabIndex={0}
               >
-                <div className="w-12 h-12 rounded-2xl bg-background flex items-center justify-center text-cappuccino mb-6 group-hover:bg-cappuccino group-hover:text-white transition-colors duration-500 shadow-sm">
+                <div className="w-12 h-12 rounded-2xl bg-background flex items-center justify-center text-cappuccino mb-6 group-hover:bg-cappuccino group-active:bg-cappuccino group-hover:text-white group-active:text-white transition-colors duration-500 shadow-sm">
                   <policy.icon size={24} />
                 </div>
                 <h2 className="text-2xl font-serif italic text-coffee-dark mb-4">
