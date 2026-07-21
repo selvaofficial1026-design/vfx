@@ -107,7 +107,7 @@ export default function Navbar() {
             className="fixed inset-0 bg-white z-[60] flex flex-col p-6 sm:p-10 gap-8 sm:gap-10 md:hidden pointer-events-auto"
           >
             <div className="flex justify-between items-center">
-              <span className="font-serif text-3xl font-bold text-coffee-dark italic">Portfolio</span>
+              <span className="font-serif text-3xl font-bold text-coffee-dark italic">Menu</span>
               <button onClick={() => setIsOpen(false)} className="text-coffee-dark">
                 <X size={40} />
               </button>
