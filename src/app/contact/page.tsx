@@ -250,9 +250,9 @@ export default function ContactPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="mt-20 flex flex-col md:flex-row gap-8 items-center bg-white rounded-[3rem] p-12 lg:p-16 border border-cream shadow-premium"
+            className="group mt-20 flex flex-col md:flex-row gap-8 items-center bg-white rounded-[3rem] p-12 lg:p-16 border border-cream hover:border-cappuccino/30 shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.15)] hover:-translate-y-2 transition-all duration-500 cursor-default"
           >
-             <div className="w-24 h-24 bg-background rounded-full flex items-center justify-center shrink-0 border border-cappuccino/30 text-cappuccino hidden md:flex">
+             <div className="w-24 h-24 bg-background group-hover:bg-cappuccino group-hover:shadow-[0_0_30px_rgba(200,149,95,0.4)] rounded-full flex items-center justify-center shrink-0 border border-cappuccino/30 text-cappuccino group-hover:text-white transition-all duration-500 hidden md:flex">
                 <Globe size={40} />
              </div>
              
