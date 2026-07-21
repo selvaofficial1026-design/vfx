@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VFX Studio
 
-## Getting Started
+An elite visual effects studio establishing a new standard for visual excellence. We specialize in high-end compositing, 3D animation, and motion graphics, engineered for the world's most ambitious cinematic stories.
 
-First, run the development server:
+## Architecture
+
+This project is a high-performance web application built with modern web standards to reflect the premium quality of the studio.
+
+- **Framework:** Next.js 14/15 (App Router)
+- **Styling:** Tailwind CSS with a custom-calibrated "Coffee & Cream" design system
+- **Animations:** Framer Motion (Spring Physics & Micro-interactions)
+- **Typography:** Custom pairing of Playfair Display and Inter
+- **Icons:** Lucide React
+
+## Local Development
+
+To run the development server locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Design Philosophy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Vibrant & Premium:** The UI utilizes carefully calibrated CSS variables (`--cappuccino`, `--coffee-dark`, `--cream`) to ensure a luxurious aesthetic across all display types, specifically optimized for rich contrast on both LCD and OLED screens.
+- **Native-App Feel:** Implements strict viewport scaling, mobile scroll-locking, and dynamic hover-cursor rendering to emulate a flawless native application experience on touch devices.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Crafting Impossible Worlds Since 2008*
