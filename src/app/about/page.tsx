@@ -99,7 +99,7 @@ export default function AboutPage() {
             title="Meet the Visionaries"
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 mt-16">
             {[
               { name: "Ravi Arasu", role: "Founder & VFX Supervisor", image: "/images/ravi.png" },
               { name: "Anushuya", role: "Head of 3D Pipeline", image: "/images/anushuya.png" },
@@ -111,14 +111,21 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="text-center group active:scale-[0.98] transition-transform duration-300 cursor-pointer"
+                className={cn(
+                  "text-center group active:scale-[0.98] transition-transform duration-300 cursor-pointer focus:outline-none",
+                  i === 0 ? "col-span-2 md:col-span-1" : "col-span-1"
+                )}
+                tabIndex={0}
               >
-                <div className="relative aspect-[3/4] rounded-[2rem] overflow-hidden mb-8 shadow-premium">
-                  <Image src={member.image} alt={member.name} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className={cn(
+                  "relative rounded-[2rem] overflow-hidden mb-4 md:mb-8 shadow-premium",
+                  i === 0 ? "aspect-square md:aspect-[3/4]" : "aspect-[3/4]"
+                )}>
+                  <Image src={member.image} alt={member.name} fill className="object-cover group-hover:scale-105 group-active:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/60 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500" />
                 </div>
-                <h4 className="text-2xl font-serif text-coffee-dark italic">{member.name}</h4>
-                <p className="text-[10px] uppercase tracking-[0.3em] text-cappuccino font-bold mt-2">{member.role}</p>
+                <h4 className="text-lg md:text-2xl font-serif text-coffee-dark italic">{member.name}</h4>
+                <p className="text-[8px] md:text-[10px] uppercase tracking-widest md:tracking-[0.3em] text-cappuccino font-bold mt-1 md:mt-2">{member.role}</p>
               </motion.div>
             ))}
           </div>
