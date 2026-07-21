@@ -72,7 +72,6 @@ export default function Footer() {
         <p>© {new Date().getFullYear()} VFX Studio. All rights reserved.</p>
         <div className="flex gap-8">
           <Link href="/privacy" className="hover:text-cappuccino transition-colors">Privacy Policy</Link>
-          <Link href="/terms" className="hover:text-cappuccino transition-colors">Terms of Service</Link>
         </div>
       </div>
     </footer>
