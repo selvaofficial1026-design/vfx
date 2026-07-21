@@ -80,7 +80,7 @@ export default function AboutPage() {
               </div>
             </motion.div>
             
-            <div className="relative aspect-square rounded-[3rem] overflow-hidden shadow-premium group">
+            <div className="relative aspect-square rounded-[3rem] overflow-hidden shadow-premium group active:scale-[0.98] transition-transform duration-500 cursor-pointer">
               <Image 
                 src="/images/hero_premium.png" 
                 alt="Our Main Studio Infrastructure" 
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="text-center group"
+                className="text-center group active:scale-[0.98] transition-transform duration-300 cursor-pointer"
               >
                 <div className="relative aspect-[3/4] rounded-[2rem] overflow-hidden mb-8 shadow-premium">
                   <Image src={member.image} alt={member.name} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
@@ -136,16 +136,16 @@ export default function AboutPage() {
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-            <div className="lg:col-span-2 aspect-video relative rounded-[2rem] overflow-hidden shadow-premium">
+            <div className="lg:col-span-2 aspect-video relative rounded-[2rem] overflow-hidden shadow-premium active:scale-[0.98] transition-transform duration-500 cursor-pointer">
               <Image src="/images/hero.png" alt="Compositing Suites" fill className="object-cover" />
             </div>
-            <div className="aspect-square relative rounded-[2rem] overflow-hidden shadow-premium">
+            <div className="aspect-square relative rounded-[2rem] overflow-hidden shadow-premium active:scale-[0.98] transition-transform duration-500 cursor-pointer">
               <Image src="/images/hero_branded.png" alt="Color Grading Suite" fill className="object-cover" />
             </div>
-            <div className="aspect-square relative rounded-[2rem] overflow-hidden shadow-premium">
+            <div className="aspect-square relative rounded-[2rem] overflow-hidden shadow-premium active:scale-[0.98] transition-transform duration-500 cursor-pointer">
               <Image src="/images/coffee.png" alt="High-Performance Render Farm" fill className="object-cover" />
             </div>
-            <div className="lg:col-span-2 aspect-video relative rounded-[2rem] overflow-hidden shadow-premium">
+            <div className="lg:col-span-2 aspect-video relative rounded-[2rem] overflow-hidden shadow-premium active:scale-[0.98] transition-transform duration-500 cursor-pointer">
               <Image src="/images/hero_premium.png" alt="Client Viewing and Review Area" fill className="object-cover" />
             </div>
           </div>

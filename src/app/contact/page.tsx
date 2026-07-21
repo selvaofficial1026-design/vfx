@@ -94,9 +94,9 @@ export default function ContactPage() {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.1 }}
-                    className="group flex items-center gap-6 p-8 rounded-[1.5rem] bg-white border border-cream hover:border-cappuccino/30 transition-all duration-500 shadow-premium hover:shadow-premium-hover"
+                    className="group flex items-center gap-6 p-8 rounded-[1.5rem] bg-white border border-cream hover:border-cappuccino/30 transition-all duration-500 shadow-premium hover:shadow-premium-hover active:scale-[0.98] active:bg-cream/10 active:shadow-inner cursor-pointer"
                   >
-                    <div className="w-14 h-14 bg-background rounded-full flex items-center justify-center shrink-0 group-hover:bg-coffee-dark group-hover:text-white transition-all duration-500 text-cappuccino">
+                    <div className="w-14 h-14 bg-background rounded-full flex items-center justify-center shrink-0 group-hover:bg-coffee-dark group-hover:text-white transition-all duration-500 text-cappuccino group-active:scale-90">
                       <item.icon size={24} />
                     </div>
                     <div>
@@ -211,7 +211,7 @@ export default function ContactPage() {
                     <button 
                       type="submit" 
                       disabled={isSubmitting}
-                      className="px-8 py-3 bg-cappuccino text-coffee-dark rounded-full font-bold text-[10px] uppercase tracking-[0.2em] hover:bg-white transition-all shadow-[0_0_20px_rgba(200,160,120,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 group/btn relative overflow-hidden"
+                      className="px-8 py-3 bg-cappuccino text-coffee-dark rounded-full font-bold text-[10px] uppercase tracking-[0.2em] hover:bg-white transition-all shadow-[0_0_20px_rgba(200,160,120,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 group/btn relative overflow-hidden active:scale-[0.98] active:shadow-inner"
                     >
                       {/* Button Hover Sweep Effect */}
                       <div className="absolute inset-0 w-full h-full bg-white scale-x-0 group-hover/btn:scale-x-100 origin-left transition-transform duration-500 ease-out -z-10" />
