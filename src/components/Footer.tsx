@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-coffee-dark text-white pt-24 pb-12 px-6 md:px-12 relative overflow-hidden font-sans">
       {/* Decorative background circle */}
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cappuccino/5 rounded-full translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cappuccino/5 rounded-full translate-y-1/2 translate-x-1/2 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 mb-20 relative z-10">
         {/* Brand Section */}
@@ -68,10 +68,13 @@ export default function Footer() {
 
       </div>
 
-      <div className="max-w-7xl mx-auto pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-white/40 text-[10px] font-bold uppercase tracking-[0.2em]">
+      <div className="max-w-7xl mx-auto pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-white/40 text-[10px] font-bold uppercase tracking-[0.2em] relative z-10">
         <p>© {new Date().getFullYear()} VFX Studio. All rights reserved.</p>
         <div className="flex gap-8">
-          <Link href="/privacy" className="hover:text-cappuccino transition-colors">Privacy Policy</Link>
+          <Link href="/privacy" className="group relative hover:text-white transition-colors duration-300">
+            <span className="relative z-10">Privacy Policy</span>
+            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-cappuccino transition-all duration-300 group-hover:w-full shadow-[0_0_8px_rgba(200,149,95,0.8)]" />
+          </Link>
         </div>
       </div>
     </footer>
