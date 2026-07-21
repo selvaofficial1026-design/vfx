@@ -75,18 +75,17 @@ export default function PrivacyPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 + 0.3 }}
                 className={cn(
-                  "group bg-white p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-cream shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.15)] active:shadow-[0_20px_50px_rgba(200,149,95,0.15)] hover:-translate-y-2 active:-translate-y-1 transition-all duration-500 cursor-pointer focus:outline-none flex flex-col",
-                  (index === 0 || index === 3) ? "col-span-2 md:col-span-1" : "col-span-1 md:col-span-1"
+                  "group bg-white p-5 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-cream shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.15)] active:shadow-[0_20px_50px_rgba(200,149,95,0.15)] hover:-translate-y-2 active:-translate-y-1 transition-all duration-500 cursor-pointer focus:outline-none flex flex-col col-span-1"
                 )}
                 tabIndex={0}
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-background flex items-center justify-center text-cappuccino mb-4 md:mb-6 group-hover:bg-cappuccino group-active:bg-cappuccino group-hover:text-white group-active:text-white transition-colors duration-500 shadow-sm shrink-0">
                   <policy.icon className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
-                <h2 className="text-sm md:text-2xl font-serif italic text-coffee-dark mb-2 md:mb-4">
+                <h2 className="text-xs md:text-2xl font-serif italic text-coffee-dark mb-2 md:mb-4 leading-tight">
                   {policy.title}
                 </h2>
-                <p className="text-[10px] md:text-base text-coffee-dark/60 font-light leading-relaxed flex-grow">
+                <p className="text-[8px] md:text-base text-coffee-dark/60 font-light leading-snug md:leading-relaxed flex-grow">
                   {policy.content}
                 </p>
               </motion.div>
