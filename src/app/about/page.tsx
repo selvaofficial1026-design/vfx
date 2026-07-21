@@ -133,34 +133,40 @@ export default function AboutPage() {
             title="State of the Art Facilities"
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-            <div className="group lg:col-span-2 aspect-video relative rounded-[2rem] overflow-hidden shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.25)] hover:-translate-y-2 active:scale-[0.98] transition-all duration-500 cursor-pointer">
-              <Image src="/images/hero.png" alt="Compositing Suites" fill quality={100} className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
-              <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/90 via-coffee-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8 md:p-10">
-                <span className="text-white font-serif text-2xl md:text-3xl font-bold translate-y-4 group-hover:translate-y-0 transition-transform duration-500 drop-shadow-lg">Compositing Suites</span>
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-8 mt-16">
+            
+            {/* Image 1: Compositing Suites (Full Mobile, 3 Desktop) */}
+            <div className="group col-span-2 lg:col-span-3 aspect-[4/3] lg:aspect-video relative rounded-[2rem] overflow-hidden shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.25)] active:shadow-[0_20px_50px_rgba(200,149,95,0.25)] hover:-translate-y-2 active:-translate-y-2 active:scale-[0.98] transition-all duration-500 cursor-pointer focus:outline-none" tabIndex={0}>
+              <Image src="/images/hero.png" alt="Compositing Suites" fill quality={100} className="object-cover group-hover:scale-105 group-active:scale-105 transition-transform duration-700 ease-out" />
+              <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/90 via-coffee-dark/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500 flex items-end p-6 md:p-10">
+                <span className="text-white font-serif text-2xl md:text-3xl font-bold translate-y-4 group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-500 drop-shadow-lg">Compositing Suites</span>
               </div>
             </div>
-            <div className="group aspect-square relative rounded-[2rem] overflow-hidden shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.25)] hover:-translate-y-2 active:scale-[0.98] transition-all duration-500 cursor-pointer">
-              <Image src="/images/hero_branded.png" alt="Color Grading Suite" fill quality={100} className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
-              <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/90 via-coffee-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6 md:p-8">
-                <span className="text-white font-serif text-xl md:text-2xl font-bold translate-y-4 group-hover:translate-y-0 transition-transform duration-500 drop-shadow-lg">Color Grading Suite</span>
-              </div>
-            </div>
-          </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mt-16">
-            <div className="group lg:col-span-3 aspect-video relative rounded-[2rem] overflow-hidden shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.25)] active:shadow-[0_20px_50px_rgba(200,149,95,0.25)] hover:-translate-y-2 active:-translate-y-2 active:scale-[0.98] transition-all duration-500 cursor-pointer focus:outline-none" tabIndex={0}>
-              <Image src="/images/coffee.png" alt="High-Performance Render Farm" fill quality={100} className="object-cover group-hover:scale-105 group-active:scale-105 transition-transform duration-700 ease-out" />
-              <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/90 via-coffee-dark/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500 flex items-end p-6 md:p-8">
-                <span className="text-white font-serif text-xl md:text-2xl font-bold translate-y-4 group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-500 drop-shadow-lg">Render Farm</span>
+            {/* Image 2: Color Grading Suite (Half Mobile, 2 Desktop) */}
+            <div className="group col-span-1 lg:col-span-2 aspect-square relative rounded-[2rem] overflow-hidden shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.25)] active:shadow-[0_20px_50px_rgba(200,149,95,0.25)] hover:-translate-y-2 active:-translate-y-2 active:scale-[0.98] transition-all duration-500 cursor-pointer focus:outline-none" tabIndex={0}>
+              <Image src="/images/hero_branded.png" alt="Color Grading Suite" fill quality={100} className="object-cover group-hover:scale-105 group-active:scale-105 transition-transform duration-700 ease-out" />
+              <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/90 via-coffee-dark/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500 flex items-end p-4 md:p-8">
+                <span className="text-white font-serif text-base md:text-2xl font-bold translate-y-4 group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-500 drop-shadow-lg">Color Grading</span>
               </div>
             </div>
-            <div className="group lg:col-span-2 aspect-video relative rounded-[2rem] overflow-hidden shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.25)] active:shadow-[0_20px_50px_rgba(200,149,95,0.25)] hover:-translate-y-2 active:-translate-y-2 active:scale-[0.98] transition-all duration-500 cursor-pointer focus:outline-none" tabIndex={0}>
+
+            {/* Image 3: Render Farm (Half Mobile, 2 Desktop) */}
+            <div className="group col-span-1 lg:col-span-2 aspect-square relative rounded-[2rem] overflow-hidden shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.25)] active:shadow-[0_20px_50px_rgba(200,149,95,0.25)] hover:-translate-y-2 active:-translate-y-2 active:scale-[0.98] transition-all duration-500 cursor-pointer focus:outline-none" tabIndex={0}>
+              <Image src="/images/coffee.png" alt="High-Performance Render Farm" fill quality={100} className="object-cover group-hover:scale-105 group-active:scale-105 transition-transform duration-700 ease-out" />
+              <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/90 via-coffee-dark/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500 flex items-end p-4 md:p-8">
+                <span className="text-white font-serif text-base md:text-2xl font-bold translate-y-4 group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-500 drop-shadow-lg">Render Farm</span>
+              </div>
+            </div>
+
+            {/* Image 4: Client Review Area (Full Mobile, 3 Desktop) */}
+            <div className="group col-span-2 lg:col-span-3 aspect-[4/3] lg:aspect-video relative rounded-[2rem] overflow-hidden shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.25)] active:shadow-[0_20px_50px_rgba(200,149,95,0.25)] hover:-translate-y-2 active:-translate-y-2 active:scale-[0.98] transition-all duration-500 cursor-pointer focus:outline-none" tabIndex={0}>
               <Image src="/images/hero_premium.png" alt="Client Viewing and Review Area" fill quality={100} className="object-cover group-hover:scale-105 group-active:scale-105 transition-transform duration-700 ease-out" />
-              <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/90 via-coffee-dark/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500 flex items-end p-8 md:p-10">
+              <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/90 via-coffee-dark/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500 flex items-end p-6 md:p-10">
                 <span className="text-white font-serif text-2xl md:text-3xl font-bold translate-y-4 group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-500 drop-shadow-lg">Client Review Area</span>
               </div>
             </div>
+
           </div>
         </div>
       </section>
