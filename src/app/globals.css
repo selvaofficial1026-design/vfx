@@ -45,6 +45,12 @@
     -webkit-tap-highlight-color: transparent;
   }
   
+  html {
+    /* Fallback for browsers that do not support dvh */
+    height: 100vh;
+    height: 100dvh;
+  }
+  
   body {
     background-color: var(--background);
     color: var(--foreground);
