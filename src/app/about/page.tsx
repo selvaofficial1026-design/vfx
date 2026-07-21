@@ -5,6 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Cpu, MonitorPlay, Zap, Target } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function AboutPage() {
   return (
