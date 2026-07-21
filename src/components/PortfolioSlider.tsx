@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Play } from "lucide-react";
@@ -24,6 +24,24 @@ interface PortfolioSliderProps {
 export default function PortfolioSlider({ items, onPlay, isPaused = false }: PortfolioSliderProps) {
   const [isSliderHovered, setIsSliderHovered] = useState(false);
   const [hoveredCardIndex, setHoveredCardIndex] = useState<number | null>(null);
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (isPaused || isSliderHovered) return;
+
+    const interval = setInterval(() => {
+      if (sliderRef.current) {
+        sliderRef.current.scrollLeft += 1;
+        // Reset scroll position for infinite loop effect
+        // We use scrollWidth / 2 because we duplicated the items perfectly
+        if (sliderRef.current.scrollLeft >= sliderRef.current.scrollWidth / 2) {
+          sliderRef.current.scrollLeft = 0;
+        }
+      }
+    }, 20); // 50fps smooth scroll
+
+    return () => clearInterval(interval);
+  }, [isPaused, isSliderHovered]);
 
   if (items.length === 0) {
     return (
@@ -55,11 +73,9 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
       
       {/* Continuous Marquee Container */}
       <div 
-        className="flex gap-8 w-max pl-8 animate-marquee"
-        style={{
-          animationDuration: `${items.length > 0 ? items.length * 6 : 20}s`,
-          animationPlayState: (isSliderHovered || isPaused) ? "paused" : "running"
-        }}
+        ref={sliderRef}
+        className="flex gap-8 pl-8 overflow-x-auto [&::-webkit-scrollbar]:hidden"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {duplicatedItems.map((item, index) => {
           const isCardHovered = hoveredCardIndex === index;
