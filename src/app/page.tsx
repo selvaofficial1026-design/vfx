@@ -1,12 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MenuItemCard from "@/components/MenuItemCard";
 import SectionHeading from "@/components/SectionHeading";
+import VideoModal from "@/components/VideoModal";
 import { Star, User2 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -61,6 +62,8 @@ const capabilities = [
 ];
 
 export default function Home() {
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
   return (
     <main className="min-h-screen flex flex-col pt-0 bg-background relative">
       <Hero />
@@ -74,7 +77,12 @@ export default function Home() {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
             {featuredItems.map((item, index) => (
-              <MenuItemCard key={index} index={index} {...item} />
+              <MenuItemCard 
+                key={index} 
+                index={index} 
+                {...item} 
+                onPlay={(id) => setActiveVideo(id)}
+              />
             ))}
           </div>
           <div className="mt-16 md:mt-20 text-center">
@@ -184,7 +192,11 @@ export default function Home() {
         </div>
       </section>
 
-
+      <VideoModal 
+        isOpen={!!activeVideo} 
+        videoId={activeVideo} 
+        onClose={() => setActiveVideo(null)} 
+      />
     </main>
   );
 }

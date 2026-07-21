@@ -15,15 +15,16 @@ interface MenuItemCardProps {
   tag?: string;
   youtubeId?: string;
   index?: number;
+  onPlay?: (youtubeId: string) => void;
 }
 
-export default function MenuItemCard({ name, description, price, image, category, is4K, tag, youtubeId, index = 0 }: MenuItemCardProps) {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
-
+export default function MenuItemCard({ name, description, price, image, category, is4K, tag, youtubeId, index = 0, onPlay }: MenuItemCardProps) {
   return (
     <>
       <motion.div
-        onClick={() => youtubeId && setIsVideoOpen(true)}
+        onClick={() => {
+          if (onPlay && youtubeId) onPlay(youtubeId);
+        }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -91,41 +92,7 @@ export default function MenuItemCard({ name, description, price, image, category
         </div>
       </motion.div>
 
-      {/* Video Modal */}
-      <AnimatePresence>
-        {isVideoOpen && youtubeId && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-xl p-4 md:p-10"
-          >
-            <button
-              onClick={() => setIsVideoOpen(false)}
-              className="absolute top-6 right-6 text-white hover:text-cappuccino transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2"
-            >
-              <X size={32} />
-            </button>
-            <motion.div 
-              initial={{ scale: 0.9, y: 20 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.9, y: 20 }}
-              className="w-full max-w-6xl aspect-video bg-coffee-dark rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(200,160,120,0.2)] border border-white/10"
-            >
-              <iframe
-                width="100%"
-                height="100%"
-                src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=0&controls=1&rel=0`}
-                title="VFX Project Showcase"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              ></iframe>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+
     </>
   );
 }
