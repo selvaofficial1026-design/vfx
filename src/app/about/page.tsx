@@ -183,9 +183,9 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="p-10 bg-white rounded-[2rem] border border-cream shadow-premium hover:shadow-premium-hover transition-all"
+                className="group p-10 bg-white rounded-[2rem] border border-cream hover:border-cappuccino/30 shadow-premium hover:shadow-[0_20px_40px_rgba(200,149,95,0.12)] hover:-translate-y-2 transition-all duration-500 cursor-default"
               >
-                <div className="w-14 h-14 bg-background rounded-2xl flex items-center justify-center mb-6 text-cappuccino">
+                <div className="w-14 h-14 bg-background group-hover:bg-cappuccino group-hover:shadow-[0_0_20px_rgba(200,149,95,0.3)] rounded-2xl flex items-center justify-center mb-6 text-cappuccino group-hover:text-white transition-all duration-500 group-hover:scale-110">
                   <value.icon size={28} />
                 </div>
                 <h4 className="text-xl font-bold text-coffee-dark mb-3 tracking-tight">{value.title}</h4>
