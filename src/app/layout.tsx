@@ -37,7 +37,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans relative">
+      <body className="min-h-full flex flex-col font-sans relative overflow-x-hidden">
         <div className="grain-overlay" />
         <div className="aura-container">
           <div className="aura-blob aura-blob-1" />
