@@ -8,9 +8,9 @@ import Hero from "@/components/Hero";
 import MenuItemCard from "@/components/MenuItemCard";
 import SectionHeading from "@/components/SectionHeading";
 import Footer from "@/components/Footer";
-import { Star, User2, MonitorPlay, Camera, PencilRuler, Layers } from "lucide-react";
-import { motion, useScroll } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { Star, User2 } from "lucide-react";
+import { motion } from "framer-motion";
+
 
 const featuredItems = [
   {
@@ -62,8 +62,6 @@ const capabilities = [
 ];
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
-  
   return (
     <main className="min-h-screen flex flex-col pt-0 bg-background relative">
       <Navbar />

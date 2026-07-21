@@ -71,7 +71,7 @@ export default function AboutPage() {
 
               <div className="mt-12 pt-12 border-t border-cream">
                 <p className="text-2xl font-serif text-coffee-dark italic leading-relaxed">
-                  "We aren't just rendering pixels; we are building the visual foundation for your most ambitious stories."
+                  &quot;We aren&apos;t just rendering pixels; we are building the visual foundation for your most ambitious stories.&quot;
                 </p>
                 <div className="mt-6 flex items-center gap-4">
                   <div className="w-12 h-[1px] bg-cappuccino" />

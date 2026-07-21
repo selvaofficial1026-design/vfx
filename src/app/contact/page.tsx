@@ -3,7 +3,7 @@
 import React, { useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { MapPin, Phone, Mail, Building2, Globe, Send, Loader2 } from "lucide-react";
+import { MapPin, Phone, Building2, Globe, Send, Loader2 } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -26,7 +26,7 @@ export default function ContactPage() {
         "YOUR_PUBLIC_KEY"
       )
       .then(
-        (result) => {
+        () => {
           setStatus("success");
           setIsSubmitting(false);
           if (formRef.current) formRef.current.reset();
