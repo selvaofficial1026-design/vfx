@@ -61,7 +61,7 @@ export default function Hero() {
           className="object-cover brightness-[0.35]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1A1A1A]/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-transparent to-transparent" />
       </motion.div>
 
       <motion.div 
@@ -79,12 +79,12 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="inline-block px-4 sm:px-6 py-2 mb-6 sm:mb-8 border border-[#C4A484]/40 rounded-full text-[#C4A484] text-[9px] sm:text-[10px] md:text-xs font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase backdrop-blur-md bg-white/5">
+          <span className="inline-block px-4 sm:px-6 py-2 mb-6 sm:mb-8 border border-cappuccino/40 rounded-full text-cappuccino text-[9px] sm:text-[10px] md:text-xs font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase backdrop-blur-md bg-white/5">
             Welcome to the Hub of Visual Excellence
           </span>
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-serif text-white mb-6 sm:mb-8 tracking-tight leading-[1.1] text-balance">
             Stunning Visuals. <br />
-            <span className="italic font-normal text-[#C4A484]">A Refined Experience.</span>
+            <span className="italic font-normal text-cappuccino">A Refined Experience.</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-white/90 font-sans mb-12 max-w-2xl mx-auto leading-relaxed font-light">
             Crafted visual effects and moments worth watching.
@@ -93,7 +93,7 @@ export default function Hero() {
             <Magnetic>
               <Link
                 href="/portfolio"
-                className="group relative w-full sm:w-auto px-12 py-5 bg-[#C4A484] text-[#3B2F2F] rounded-full font-bold text-sm tracking-widest uppercase overflow-hidden transition-all shadow-premium hover:shadow-premium-hover active:scale-95 flex items-center justify-center"
+                className="group relative w-full sm:w-auto px-12 py-5 bg-cappuccino text-coffee-dark rounded-full font-bold text-sm tracking-widest uppercase overflow-hidden transition-all shadow-premium hover:shadow-premium-hover active:scale-95 flex items-center justify-center"
               >
                 <span className="relative z-10">Explore Portfolio</span>
                 <div className="absolute inset-0 bg-white/30 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
@@ -102,7 +102,7 @@ export default function Hero() {
             <Magnetic>
               <Link
                 href="/contact"
-                className="w-full sm:w-auto px-12 py-5 border-2 border-white/80 text-white rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-[#3B2F2F] transition-all backdrop-blur-sm shadow-premium active:scale-95 flex items-center justify-center"
+                className="w-full sm:w-auto px-12 py-5 border-2 border-white/80 text-white rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-coffee-dark transition-all backdrop-blur-sm shadow-premium active:scale-95 flex items-center justify-center"
               >
                 Visit Us
               </Link>
