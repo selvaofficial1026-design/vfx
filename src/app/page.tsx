@@ -169,12 +169,12 @@ export default function Home() {
                 whileHover={{ y: -10, scale: 1.02 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-coffee-dark p-8 md:p-10 rounded-[2rem] text-white flex flex-col justify-between shadow-premium hover:shadow-[0_20px_50px_rgba(200,160,120,0.2)] transition-all relative overflow-hidden group border border-white/5"
+                className="bg-gradient-to-br from-[#2E2020] to-[#1C1414] p-8 md:p-10 rounded-[2rem] text-white flex flex-col justify-between shadow-premium hover:shadow-[0_20px_50px_rgba(200,160,120,0.25)] transition-all relative overflow-hidden group border border-cappuccino/20"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-cappuccino/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-cappuccino/15 transition-colors duration-500 blur-xl" />
-                <Star className="text-cappuccino absolute top-8 right-8 opacity-50 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-110" size={24} fill="currentColor" />
+                <div className="absolute top-0 right-0 w-48 h-48 bg-cappuccino/10 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-cappuccino/20 transition-colors duration-500 blur-[40px]" />
+                <Star className="text-cappuccino absolute top-8 right-8 opacity-70 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-110 drop-shadow-[0_0_15px_rgba(200,149,95,0.5)]" size={24} fill="currentColor" />
                 
-                <p className="text-lg font-serif leading-relaxed mb-8 italic relative z-10 text-white/90">
+                <p className="text-lg md:text-xl font-serif leading-relaxed mb-8 italic relative z-10 text-white drop-shadow-md">
                   &ldquo;{test.quote}&rdquo;
                 </p>
                 <div className="relative z-10 flex items-center gap-4">

@@ -57,8 +57,9 @@ export default function Hero() {
           alt="VFX Studio Premium Environment"
           fill
           priority
+          quality={100}
           sizes="100vw"
-          className="object-cover brightness-[0.35]"
+          className="object-cover brightness-[0.50]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-transparent to-transparent" />
@@ -79,14 +80,14 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="inline-block px-4 sm:px-6 py-2 mb-6 sm:mb-8 border border-cappuccino/40 rounded-full text-cappuccino text-[9px] sm:text-[10px] md:text-xs font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase backdrop-blur-md bg-white/5">
+          <span className="inline-block px-4 sm:px-6 py-2 mb-6 sm:mb-8 border border-cappuccino/40 rounded-full text-cappuccino text-[9px] sm:text-[10px] md:text-xs font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase backdrop-blur-md bg-black/20 shadow-lg">
             Welcome to the Hub of Visual Excellence
           </span>
-          <h1 className="text-5xl sm:text-6xl md:text-8xl font-serif text-white mb-6 sm:mb-8 tracking-tight leading-[1.1] text-balance">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-serif text-white mb-6 sm:mb-8 tracking-tight leading-[1.1] text-balance drop-shadow-2xl">
             Stunning Visuals. <br />
-            <span className="italic font-normal text-cappuccino">A Refined Experience.</span>
+            <span className="italic font-normal text-cappuccino drop-shadow-xl">A Refined Experience.</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/90 font-sans mb-12 max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-base sm:text-lg md:text-xl text-white/95 font-sans mb-12 max-w-2xl mx-auto leading-relaxed font-normal drop-shadow-md bg-black/10 px-4 py-2 rounded-2xl backdrop-blur-[2px]">
             Crafted visual effects and moments worth watching.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
