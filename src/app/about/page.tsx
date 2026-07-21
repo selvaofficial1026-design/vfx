@@ -186,7 +186,7 @@ export default function AboutPage() {
             title="What Defines Us"
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-16">
             {[
               { icon: Target, title: "Precision", desc: "Pixel-perfect tracking and seamless integration in every single shot." },
               { icon: MonitorPlay, title: "Innovation", desc: "Leveraging the latest in AI and real-time rendering technologies." },
@@ -199,13 +199,13 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group p-10 bg-white rounded-[2rem] border border-cream hover:border-cappuccino/30 active:border-cappuccino/30 shadow-premium hover:shadow-[0_20px_40px_rgba(200,149,95,0.12)] active:shadow-[0_20px_40px_rgba(200,149,95,0.12)] hover:-translate-y-2 active:-translate-y-1 transition-all duration-500 cursor-pointer focus:outline-none" tabIndex={0}
+                className="group p-6 md:p-10 bg-white rounded-[1.5rem] md:rounded-[2rem] border border-cream hover:border-cappuccino/30 active:border-cappuccino/30 shadow-premium hover:shadow-[0_20px_40px_rgba(200,149,95,0.12)] active:shadow-[0_20px_40px_rgba(200,149,95,0.12)] hover:-translate-y-2 active:-translate-y-1 transition-all duration-500 cursor-pointer focus:outline-none" tabIndex={0}
               >
-                <div className="w-14 h-14 bg-background group-hover:bg-cappuccino group-active:bg-cappuccino group-hover:shadow-[0_0_20px_rgba(200,149,95,0.3)] group-active:shadow-[0_0_20px_rgba(200,149,95,0.3)] rounded-2xl flex items-center justify-center mb-6 text-cappuccino group-hover:text-white group-active:text-white transition-all duration-500 group-hover:scale-110 group-active:scale-110">
-                  <value.icon size={28} />
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-background group-hover:bg-cappuccino group-active:bg-cappuccino group-hover:shadow-[0_0_20px_rgba(200,149,95,0.3)] group-active:shadow-[0_0_20px_rgba(200,149,95,0.3)] rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 text-cappuccino group-hover:text-white group-active:text-white transition-all duration-500 group-hover:scale-110 group-active:scale-110">
+                  <value.icon className="w-5 h-5 md:w-7 md:h-7" />
                 </div>
-                <h4 className="text-xl font-bold text-coffee-dark mb-3 tracking-tight">{value.title}</h4>
-                <p className="text-sm text-coffee-dark/60 leading-relaxed font-light">{value.desc}</p>
+                <h4 className="text-sm md:text-xl font-bold text-coffee-dark mb-2 md:mb-3 tracking-tight">{value.title}</h4>
+                <p className="text-[10px] md:text-sm text-coffee-dark/60 leading-relaxed font-light">{value.desc}</p>
               </motion.div>
             ))}
           </div>
