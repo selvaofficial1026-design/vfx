@@ -27,9 +27,14 @@ export default function Navbar() {
     
     // Check initial scroll position immediately on mount/navigation
     handleScroll();
+    // Re-check after a tiny delay to catch browser scroll restoration
+    const timeoutId = setTimeout(handleScroll, 100);
     
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timeoutId);
+    };
   }, [pathname]);
 
   return (
