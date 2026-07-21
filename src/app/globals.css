@@ -161,3 +161,14 @@
   from { letter-spacing: 0.5em; opacity: 0; }
   to { letter-spacing: 0.1em; opacity: 1; }
 }
+
+/* Marquee Animation */
+.animate-marquee {
+  animation: marquee linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}

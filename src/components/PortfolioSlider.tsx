@@ -54,17 +54,10 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
     >
       
       {/* Continuous Marquee Container */}
-      <motion.div 
-        className="flex gap-8 w-max pl-8"
-        animate={{
-          x: ["0%", "-50%"]
-        }}
-        transition={{
-          ease: "linear",
-          duration: items.length > 0 ? items.length * 6 : 20,
-          repeat: Infinity,
-        }}
+      <div 
+        className="flex gap-8 w-max pl-8 animate-marquee"
         style={{
+          animationDuration: `${items.length > 0 ? items.length * 6 : 20}s`,
           animationPlayState: (isSliderHovered || isPaused) ? "paused" : "running"
         }}
       >
@@ -178,7 +171,7 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
             </motion.div>
           );
         })}
-      </motion.div>
+      </div>
       
     </div>
   );
