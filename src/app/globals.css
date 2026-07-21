@@ -85,6 +85,8 @@
   z-index: 9999;
   animation: noise 0.2s infinite;
   will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 @keyframes noise {
@@ -129,15 +131,14 @@
   width: 60vmax;
   height: 60vmax;
   border-radius: 50%;
-  filter: blur(80px); /* Reduced from 120px for performance */
   opacity: 0.05;
-  background: radial-gradient(circle, var(--cappuccino), transparent);
+  background: radial-gradient(circle at center, var(--cappuccino) 0%, rgba(200,160,120,0) 60%);
   animation: float 20s infinite alternate ease-in-out;
   will-change: transform;
 }
 
 .aura-blob-1 { top: -10%; left: -10%; animation-delay: 0s; }
-.aura-blob-2 { bottom: -10%; right: -10%; background: radial-gradient(circle, var(--coffee-dark), transparent); animation-delay: -10s; }
+.aura-blob-2 { bottom: -10%; right: -10%; background: radial-gradient(circle at center, var(--coffee-dark) 0%, rgba(20,15,10,0) 60%); animation-delay: -10s; }
 
 @keyframes float {
   0% { transform: translate3d(0, 0, 0) scale(1); }
