@@ -31,14 +31,17 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
 
     const interval = setInterval(() => {
       if (sliderRef.current) {
+        // Incrementing by 1.5 makes it 50% faster, but scrollLeft truncates.
+        // So we increment by 2 every 25ms (which is faster than 1 every 20ms) or just 1 every 10ms.
+        // Let's use 1 pixel every 10ms (approx 100fps or 100px/sec)
         sliderRef.current.scrollLeft += 1;
+        
         // Reset scroll position for infinite loop effect
-        // We use scrollWidth / 2 because we duplicated the items perfectly
         if (sliderRef.current.scrollLeft >= sliderRef.current.scrollWidth / 2) {
           sliderRef.current.scrollLeft = 0;
         }
       }
-    }, 20); // 50fps smooth scroll
+    }, 10); // 10ms interval (approx 100px/sec) for faster, smooth scrolling
 
     return () => clearInterval(interval);
   }, [isPaused, isSliderHovered]);
