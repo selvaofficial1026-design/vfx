@@ -9,9 +9,9 @@ export default function Footer() {
       {/* Decorative background circle */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-cappuccino/5 rounded-full translate-y-1/2 translate-x-1/2 pointer-events-none" />
       
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 mb-20 relative z-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-6 md:gap-12 mb-16 md:mb-20 relative z-10">
         {/* Brand Section */}
-        <div className="col-span-1 md:col-span-1">
+        <div className="col-span-2 md:col-span-1">
           <Link href="/" className="flex items-center gap-4 mb-8 group">
             <div className="relative w-12 h-12 overflow-hidden rounded-full border border-cappuccino/30 shadow-[0_0_15px_rgba(200,160,120,0.2)] flex items-center justify-center bg-white/5 group-hover:bg-cappuccino/10 transition-colors duration-500">
               <span className="font-serif font-bold italic text-cappuccino tracking-tighter text-lg">
@@ -40,9 +40,9 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
-          <h4 className="font-serif text-xl font-bold mb-8 italic text-cappuccino">Quick Links</h4>
-          <ul className="space-y-4 text-white/60">
+        <div className="col-span-1 md:col-span-1">
+          <h4 className="font-serif text-lg md:text-xl font-bold mb-6 md:mb-8 italic text-cappuccino">Quick Links</h4>
+          <ul className="space-y-4 text-white/60 text-sm md:text-base">
             <li><Link href="/" className="hover:text-cappuccino transition-colors flex items-center gap-3 group"><div className="w-1.5 h-1.5 rounded-full bg-cappuccino/30 group-hover:bg-cappuccino transition-all" /> Home</Link></li>
             <li><Link href="/portfolio" className="hover:text-cappuccino transition-colors flex items-center gap-3 group"><div className="w-1.5 h-1.5 rounded-full bg-cappuccino/30 group-hover:bg-cappuccino transition-all" /> Our Portfolio</Link></li>
             <li><Link href="/about" className="hover:text-cappuccino transition-colors flex items-center gap-3 group"><div className="w-1.5 h-1.5 rounded-full bg-cappuccino/30 group-hover:bg-cappuccino transition-all" /> About Us</Link></li>
@@ -51,16 +51,16 @@ export default function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div>
-          <h4 className="font-serif text-xl font-bold mb-8 italic text-cappuccino">Contact Us</h4>
+        <div className="col-span-1 md:col-span-1">
+          <h4 className="font-serif text-lg md:text-xl font-bold mb-6 md:mb-8 italic text-cappuccino">Contact Us</h4>
           <ul className="space-y-6 text-white/60">
-            <li className="flex gap-4 items-start group cursor-pointer active:scale-95 transition-all duration-300">
-              <MapPin className="text-cappuccino shrink-0 mt-1 group-hover:scale-125 group-active:scale-125 group-hover:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] group-active:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] transition-all duration-300" size={20} />
-              <span className="text-sm leading-relaxed group-hover:text-white group-active:text-white transition-colors duration-300">18, Usman Street, Opp to Dmart, Ariyalur - 621704</span>
+            <li className="flex gap-3 md:gap-4 items-start group cursor-pointer active:scale-95 transition-all duration-300">
+              <MapPin className="text-cappuccino shrink-0 mt-0.5 md:mt-1 group-hover:scale-125 group-active:scale-125 group-hover:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] group-active:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] transition-all duration-300 w-4 h-4 md:w-5 md:h-5" />
+              <span className="text-xs md:text-sm leading-relaxed group-hover:text-white group-active:text-white transition-colors duration-300">18, Usman Street, Opp to Dmart, Ariyalur - 621704</span>
             </li>
-            <li className="flex gap-4 items-center group cursor-pointer active:scale-95 transition-all duration-300">
-              <Phone className="text-cappuccino shrink-0 group-hover:scale-125 group-active:scale-125 group-hover:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] group-active:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] transition-all duration-300" size={20} />
-              <span className="text-sm group-hover:text-white group-active:text-white transition-colors duration-300">+91 87789 31958</span>
+            <li className="flex gap-3 md:gap-4 items-center group cursor-pointer active:scale-95 transition-all duration-300">
+              <Phone className="text-cappuccino shrink-0 group-hover:scale-125 group-active:scale-125 group-hover:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] group-active:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] transition-all duration-300 w-4 h-4 md:w-5 md:h-5" />
+              <span className="text-xs md:text-sm group-hover:text-white group-active:text-white transition-colors duration-300">+91 87789 31958</span>
             </li>
           </ul>
         </div>
