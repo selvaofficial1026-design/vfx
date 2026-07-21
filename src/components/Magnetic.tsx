@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, ReactElement, cloneElement } from "react";
+import React, { useRef, useState, ReactElement } from "react";
 import { motion } from "framer-motion";
 
 export default function Magnetic({ children }: { children: ReactElement }) {

@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
-import { Play, X } from "lucide-react";
+import { motion } from "framer-motion";
+import { Play } from "lucide-react";
 
 interface MenuItemCardProps {
   name: string;

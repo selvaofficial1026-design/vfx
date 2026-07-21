@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MenuItemCard from "@/components/MenuItemCard";
 import SectionHeading from "@/components/SectionHeading";
