@@ -78,14 +78,14 @@ export default function AboutPage() {
               </div>
             </motion.div>
             
-            <div className="relative aspect-square rounded-[3rem] overflow-hidden shadow-premium group active:scale-[0.98] transition-transform duration-500 cursor-pointer">
+            <div className="relative aspect-square rounded-[3rem] overflow-hidden shadow-premium hover:shadow-[0_20px_50px_rgba(200,149,95,0.25)] group active:scale-[0.98] transition-all duration-500 cursor-pointer">
               <Image 
                 src="/images/hero_premium.png" 
                 alt="Our Main Studio Infrastructure" 
                 fill 
-                className="object-cover group-hover:scale-110 transition-transform duration-1000"
+                quality={100}
+                className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
               />
-              <div className="absolute inset-0 bg-coffee-dark/20 group-hover:bg-transparent transition-all duration-500" />
             </div>
           </div>
         </div>
