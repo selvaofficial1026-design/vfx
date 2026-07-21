@@ -18,9 +18,10 @@ export interface PortfolioItem {
 interface PortfolioSliderProps {
   items: PortfolioItem[];
   onPlay: (videoId: string) => void;
+  isPaused?: boolean;
 }
 
-export default function PortfolioSlider({ items, onPlay }: PortfolioSliderProps) {
+export default function PortfolioSlider({ items, onPlay, isPaused = false }: PortfolioSliderProps) {
   const [isSliderHovered, setIsSliderHovered] = useState(false);
   const [hoveredCardIndex, setHoveredCardIndex] = useState<number | null>(null);
 
@@ -64,7 +65,7 @@ export default function PortfolioSlider({ items, onPlay }: PortfolioSliderProps)
           repeat: Infinity,
         }}
         style={{
-          animationPlayState: isSliderHovered ? "paused" : "running"
+          animationPlayState: (isSliderHovered || isPaused) ? "paused" : "running"
         }}
       >
         {duplicatedItems.map((item, index) => {
@@ -104,7 +105,7 @@ export default function PortfolioSlider({ items, onPlay }: PortfolioSliderProps)
                 )}
 
                 {/* Poster Image Area */}
-                <div className="relative aspect-[4/5] overflow-hidden">
+                <div className="relative aspect-square md:aspect-[4/5] overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.name}

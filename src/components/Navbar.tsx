@@ -124,8 +124,8 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className={cn(
-                      "text-4xl font-serif font-bold tracking-tight",
-                      pathname === link.href ? "text-cappuccino" : "text-coffee-dark"
+                      "text-2xl font-serif font-bold tracking-widest uppercase transition-colors duration-300",
+                      pathname === link.href ? "text-cappuccino" : "text-coffee-dark hover:text-coffee-dark/70"
                     )}
                   >
                     {link.name}

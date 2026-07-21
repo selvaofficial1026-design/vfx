@@ -170,6 +170,7 @@ export default function PortfolioPage() {
               <PortfolioSlider 
                 items={filteredItems} 
                 onPlay={(videoId) => setActiveVideo(videoId)} 
+                isPaused={!!activeVideo}
               />
             </motion.div>
           </AnimatePresence>
