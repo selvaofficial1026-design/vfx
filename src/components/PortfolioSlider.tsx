@@ -96,7 +96,7 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
               }}
               transition={{ duration: 0.4, ease: "easeOut" }}
               className={cn(
-                "w-[80vw] max-w-[300px] md:w-[280px] lg:w-[320px] shrink-0 relative transition-all duration-300",
+                "w-[85vw] sm:w-[45vw] md:w-[380px] lg:w-[420px] xl:w-[30vw] shrink-0 relative transition-all duration-300",
                 isCardHovered ? "z-30" : "z-10"
               )}
             >
@@ -117,7 +117,7 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
                 )}
 
                 {/* Poster Image Area */}
-                <div className="relative aspect-square md:aspect-[4/5] overflow-hidden">
+                <div className="relative aspect-square overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.name}
