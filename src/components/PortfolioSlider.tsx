@@ -93,7 +93,7 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
               }}
               transition={{ duration: 0.4, ease: "easeOut" }}
               className={cn(
-                "w-[180px] sm:w-[220px] md:w-[280px] shrink-0 relative transition-all duration-300",
+                "w-[80vw] max-w-[300px] md:w-[280px] lg:w-[320px] shrink-0 relative transition-all duration-300",
                 isCardHovered ? "z-30" : "z-10"
               )}
             >
@@ -119,7 +119,7 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
                     src={item.image}
                     alt={item.name}
                     fill
-                    sizes="(max-width: 640px) 180px, (max-width: 768px) 220px, 280px"
+                    sizes="(max-width: 768px) 80vw, 320px"
                     className="object-cover transition-transform duration-[2000ms] ease-out pointer-events-none group-hover/card:scale-110"
                   />
                   
