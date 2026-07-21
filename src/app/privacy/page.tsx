@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 import { Shield, Lock, Eye, Database } from "lucide-react";
@@ -102,12 +103,12 @@ export default function PrivacyPage() {
               <p className="text-white/80 font-light max-w-xl mx-auto mb-8">
                 If you have any concerns about how your data is handled, our legal and security team is here to help.
               </p>
-              <a 
-                href="mailto:privacy@vfxstudio.com"
+              <Link 
+                href="/contact"
                 className="inline-block px-8 py-4 bg-cappuccino text-coffee-dark font-bold text-[10px] uppercase tracking-[0.2em] rounded-full hover:bg-white transition-colors shadow-[0_0_20px_rgba(200,149,95,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]"
               >
-                Contact Privacy Team
-              </a>
+                Contact Our Team
+              </Link>
             </div>
           </motion.div>
 
