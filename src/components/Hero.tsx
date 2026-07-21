@@ -121,7 +121,7 @@ export default function Hero() {
         transition={{ delay: 1.5, duration: 1 }}
       >
         <span className="text-[05px] uppercase tracking-[0.3em] text-white/60 font-bold">Start your journey</span>
-        <div className="w-[1px] h-24 bg-gradient-to-b from-[#C4A484] to-transparent" />
+        <div className="w-[1px] h-24 bg-gradient-to-b from-cappuccino to-transparent" />
       </motion.div>
     </section>
   );

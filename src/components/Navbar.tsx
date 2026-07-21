@@ -57,7 +57,7 @@ export default function Navbar() {
       <div className={cn(
         "max-w-7xl mx-auto flex items-center justify-between transition-all duration-700 pointer-events-auto px-6 md:px-8",
         scrolled 
-          ? "bg-[#FAF7F2]/70 backdrop-blur-2xl py-4 rounded-full shadow-premium-hover border border-white/20 w-full md:w-fit md:min-w-[600px] md:justify-around" 
+          ? "bg-background/70 backdrop-blur-2xl py-4 rounded-full shadow-premium-hover border border-white/20 w-full md:w-fit md:min-w-[600px] md:justify-around" 
           : "bg-transparent py-10 w-full"
       )}>
         <Link href="/" className="flex items-center gap-4 group">
