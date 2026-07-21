@@ -139,7 +139,7 @@ export default function PortfolioPage() {
                   "relative px-6 md:px-8 py-3 rounded-full text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase transition-all duration-500 overflow-hidden",
                   activeCategory === cat 
                     ? "text-white shadow-xl scale-105" 
-                    : "text-coffee-dark/40 hover:text-coffee-dark/80 bg-white/50 backdrop-blur-sm border border-cream"
+                    : "text-coffee-dark/50 hover:text-coffee-dark bg-white/50 hover:bg-white backdrop-blur-sm border border-cream hover:border-cappuccino/40 hover:shadow-[0_10px_25px_rgba(200,149,95,0.15)] hover:-translate-y-1 hover:scale-105"
                 )}
               >
                 <span className="relative z-10">{cat} <span className="opacity-50 ml-1">({getCategoryCount(cat)})</span></span>
