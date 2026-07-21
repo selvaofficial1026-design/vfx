@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { MapPin, Phone, Building2, Globe, Send, Loader2 } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -43,7 +41,7 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen flex flex-col pt-0 bg-background relative overflow-hidden">
-      <Navbar />
+
       
       {/* Immersive Contact Hero */}
       <section className="relative h-[50vh] w-full flex items-center justify-center overflow-hidden">
@@ -276,7 +274,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Footer />
+
     </main>
   );
 }

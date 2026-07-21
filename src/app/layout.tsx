@@ -24,6 +24,8 @@ import LoadingScreen from "@/components/LoadingScreen";
 import CustomCursor from "@/components/CustomCursor";
 
 import PageTransition from "@/components/PageTransition";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -43,7 +45,9 @@ export default function RootLayout({
         </div>
         <LoadingScreen />
         <CustomCursor />
+        <Navbar />
         <PageTransition>{children}</PageTransition>
+        <Footer />
       </body>
     </html>
   );

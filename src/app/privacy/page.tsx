@@ -1,13 +1,11 @@
 "use client";
 
 import React from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 export default function PrivacyPage() {
   return (
     <main className="min-h-screen flex flex-col pt-32 bg-background">
-      <Navbar />
+
       <section className="px-6 md:px-12 py-20 max-w-4xl mx-auto">
         <h1 className="text-4xl font-serif text-coffee-dark mb-10 italic">Privacy Policy</h1>
         <div className="prose prose-stone max-w-none text-coffee-dark/70 font-light space-y-6">
@@ -21,7 +19,7 @@ export default function PrivacyPage() {
           <p>We implement appropriate security measures to maintain the safety of your personal information.</p>
         </div>
       </section>
-      <Footer />
+
     </main>
   );
 }

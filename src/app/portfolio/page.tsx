@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import PortfolioSlider, { PortfolioItem } from "@/components/PortfolioSlider";
 import VideoModal from "@/components/VideoModal";
@@ -116,7 +114,7 @@ export default function PortfolioPage() {
 
   return (
     <main className="min-h-screen flex flex-col pt-32 bg-background">
-      <Navbar />
+
       
       {/* Decorative Background Elements */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
@@ -184,7 +182,7 @@ export default function PortfolioPage() {
         onClose={() => setActiveVideo(null)} 
       />
 
-      <Footer />
+
     </main>
   );
 }

@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -11,7 +9,7 @@ import { Cpu, MonitorPlay, Zap, Target } from "lucide-react";
 export default function AboutPage() {
   return (
     <main className="min-h-screen flex flex-col pt-0 bg-background relative overflow-hidden">
-      <Navbar />
+
       
       {/* Hero Section */}
       <section className="relative h-[60vh] w-full flex items-center justify-center overflow-hidden">
@@ -186,7 +184,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Footer />
+
     </main>
   );
 }
