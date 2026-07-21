@@ -69,7 +69,7 @@ export default function Home() {
       <Hero />
 
       {/* Featured Projects Section */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-premium-gradient relative z-10">
+      <section className="py-20 md:py-32 px-6 md:px-12 bg-premium-gradient relative z-10" style={{ contentVisibility: 'auto' }}>
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             subtitle="Showcase"
@@ -96,7 +96,7 @@ export default function Home() {
       </section>
 
       {/* Condensed About Section */}
-      <section id="about" className="py-20 md:py-24 px-6 md:px-12 bg-white overflow-hidden relative z-10">
+      <section id="about" className="py-20 md:py-24 px-6 md:px-12 bg-white overflow-hidden relative z-10" style={{ contentVisibility: 'auto' }}>
         <div className="max-w-4xl mx-auto text-center">
            <span className="text-[10px] uppercase tracking-[0.5em] text-cappuccino font-bold mb-6 block">Our Legacy</span>
            <h2 className="text-4xl md:text-6xl font-serif text-coffee-dark italic leading-tight mb-8">
@@ -154,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 md:py-32 px-6 md:px-12 bg-background relative z-10">
+      <section className="py-20 md:py-32 px-6 md:px-12 bg-background relative z-10" style={{ contentVisibility: 'auto' }}>
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             subtitle="Voices of Excellence"

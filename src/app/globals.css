@@ -41,6 +41,14 @@
     width: 100%;
     position: relative;
     scroll-behavior: smooth;
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html {
+    /* Fallback for browsers that do not support dvh */
+    height: 100vh;
+    height: 100dvh;
   }
   
   body {
