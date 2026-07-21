@@ -37,6 +37,7 @@ export default function MenuItemCard({ name, description, price, image, category
             src={image}
             alt={name}
             fill
+            quality={100}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
             className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out"
           />
@@ -81,7 +82,7 @@ export default function MenuItemCard({ name, description, price, image, category
             </h3>
             <span className="text-cappuccino font-bold font-sans text-lg">{price}</span>
           </div>
-          <p className="text-coffee-dark/60 text-xs font-sans line-clamp-2 leading-relaxed font-light min-h-[2.5rem]">
+          <p className="text-coffee-dark/80 text-xs font-sans line-clamp-2 leading-relaxed font-normal min-h-[2.5rem]">
             {description}
           </p>
           <div className="mt-4 pt-4 border-t border-cream flex justify-center items-center">

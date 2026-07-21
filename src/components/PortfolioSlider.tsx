@@ -90,8 +90,8 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
               onMouseEnter={() => setHoveredCardIndex(index)}
               onMouseLeave={() => setHoveredCardIndex(null)}
               animate={{
-                scale: isCardHovered ? 1.05 : isAnotherCardHovered ? 0.95 : 1,
-                opacity: isAnotherCardHovered ? 0.4 : 1,
+                scale: isCardHovered ? 1.05 : isAnotherCardHovered ? 0.98 : 1,
+                opacity: isAnotherCardHovered ? 0.7 : 1,
                 y: isCardHovered ? -15 : 0,
               }}
               transition={{ duration: 0.4, ease: "easeOut" }}
@@ -122,7 +122,8 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
                     src={item.image}
                     alt={item.name}
                     fill
-                    sizes="(max-width: 768px) 80vw, 320px"
+                    quality={100}
+                    sizes="(max-width: 768px) 80vw, 33vw"
                     className="object-cover transition-transform duration-[2000ms] ease-out pointer-events-none group-hover/card:scale-110"
                   />
                   
@@ -171,7 +172,7 @@ export default function PortfolioSlider({ items, onPlay, isPaused = false }: Por
 
                 {/* Description Area */}
                 <div className="p-4 flex-1 flex flex-col justify-between bg-white z-20">
-                  <p className="text-coffee-dark/60 text-xs font-sans line-clamp-2 leading-relaxed font-light group-hover/card:text-coffee-dark/90 transition-colors">
+                  <p className="text-coffee-dark/80 text-xs font-sans line-clamp-2 leading-relaxed font-normal group-hover/card:text-coffee-dark transition-colors">
                     {item.description}
                   </p>
                   <div className="mt-4 pt-3 border-t border-cream flex justify-between items-center">
