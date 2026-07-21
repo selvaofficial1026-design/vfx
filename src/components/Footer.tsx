@@ -54,13 +54,13 @@ export default function Footer() {
         <div>
           <h4 className="font-serif text-xl font-bold mb-8 italic text-cappuccino">Contact Us</h4>
           <ul className="space-y-6 text-white/60">
-            <li className="flex gap-4 items-start">
-              <MapPin className="text-cappuccino shrink-0 mt-1" size={20} />
-              <span className="text-sm leading-relaxed">18, Usman Street, Opp to Dmart, Ariyalur - 621704</span>
+            <li className="flex gap-4 items-start group cursor-pointer">
+              <MapPin className="text-cappuccino shrink-0 mt-1 group-hover:scale-125 group-hover:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] transition-all duration-300" size={20} />
+              <span className="text-sm leading-relaxed group-hover:text-white transition-colors duration-300">18, Usman Street, Opp to Dmart, Ariyalur - 621704</span>
             </li>
-            <li className="flex gap-4 items-center">
-              <Phone className="text-cappuccino shrink-0" size={20} />
-              <span className="text-sm">+91 87789 31958</span>
+            <li className="flex gap-4 items-center group cursor-pointer">
+              <Phone className="text-cappuccino shrink-0 group-hover:scale-125 group-hover:drop-shadow-[0_0_10px_rgba(200,160,120,0.8)] transition-all duration-300" size={20} />
+              <span className="text-sm group-hover:text-white transition-colors duration-300">+91 87789 31958</span>
             </li>
           </ul>
         </div>
